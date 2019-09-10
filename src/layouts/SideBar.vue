@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%;" class="side-bar">
     <div class="logo">{{electronModules.length}}</div>
-    <a-menu mode="inline" :defaultSelectedKeys="[1]">
+    <a-menu mode="inline" :defaultSelectedKeys="[0]">
       <a-menu-item v-for="(item, index) in electronModules" :key="index">
         <div class="menu-item-inner">
           <span>{{index+1}} &nbsp;</span>
