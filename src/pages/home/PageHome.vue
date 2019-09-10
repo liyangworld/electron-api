@@ -1,6 +1,19 @@
 <template>
   <div class="home">
-    <side-bar :electronModules="electronModules" />
+    <a-layout id="components-layout-demo-fixed-sider">
+      <a-layout-sider
+        theme="light"
+        width="300"
+        :style="{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }"
+      >
+        <side-bar :electronModules="electronModules" />
+      </a-layout-sider>
+      <a-layout :style="{ marginLeft: '300px' }">
+        <a-layout-content style="background: #fff;">
+          <div>content</div>
+        </a-layout-content>
+      </a-layout>
+    </a-layout>
   </div>
 </template>
 
